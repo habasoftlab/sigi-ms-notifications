@@ -1,0 +1,7 @@
+node_modules/
+Dockerfile
+docker-compose.yaml
+mosquitto.conf
+.git
+npm-debug.log
+.scannerwork/

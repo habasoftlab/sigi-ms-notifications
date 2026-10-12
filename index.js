@@ -71,7 +71,7 @@ wss.on('connection', (ws) => {
 });
 
 // --- MQTT Client
-const mqttClient = mqtt.connect('mqtt://localhost:1883');
+const mqttClient = mqtt.connect(process.env.MQTT_URL || 'mqtt://sigi-mqtt-broker:1883');
 
 mqttClient.on('connect', () => {
     console.log('Conectado exitosamente al Broker MQTT local');
