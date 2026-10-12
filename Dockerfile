@@ -10,4 +10,6 @@ COPY . .
 
 EXPOSE 8085
 
+USER node
+
 CMD ["node", "index.js"]
